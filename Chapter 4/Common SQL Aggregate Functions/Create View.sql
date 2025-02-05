@@ -1,4 +1,4 @@
-CREATE VIEW V_CustomerOrderSummary as
+CREATE OR REPLACE VIEW V_CustomerOrderSummary as
 SELECT State,
   AVG(TotalDue) as Avg_Due,
   MIN(TotalDue) as Min_Due,
